@@ -1,0 +1,13 @@
+.logo{
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(yellow 0deg 90deg, black 90deg 180deg, white 180deg 270deg, yellow 270deg 360deg );
+    border: 5px solid;
+    border-color: black;
+    border-radius: 25px;
+    margin-top: 10%;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
