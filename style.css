@@ -1,13 +1,31 @@
 .logo{
     width: 500px;
     height: 500px;
-    background: conic-gradient(yellow 0deg 90deg, black 90deg 180deg, white 180deg 270deg, yellow 270deg 360deg );
-    border: 5px solid;
-    border-color: black;
+    background-color:   yellow;
     border-radius: 25px;
-    margin-top: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
-body{
-    display: flex;
-    justify-content: center;
+.logo::before, .logo::after{
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    content: "";
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.logo::before{
+    right: 0;
+    content: "";
+    background-color: black;
+}
+.logo::after{
+    left: 0;
+    background-color: white;
 }
